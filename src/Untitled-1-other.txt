@@ -1,0 +1,79 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+
+class ContactCard extends React.Component{
+    render(){
+       return<div><p>Name: {this.props.name} </p>
+       <p>Number: {this.props.number} </p>
+       
+       </div>;
+    }
+  }
+  
+  
+
+  
+  
+  
+function App(){
+    return(
+        <div>
+        <ContactCard name="Sara"  number="781882828238"/>
+        <ContactCard name="Cahal" />
+        <ContactCard name="Edite" />
+      </div>
+    )
+}
+
+
+ReactDOM.render(
+   <App />,
+    document.getElementById('root')
+  );
+  
+
+
+
+
+  /*function Welcome(props) {
+    return <h1>Hello, {props.name}</h1>;
+  }
+  
+  function App() {
+    return (
+      <div>
+        <Welcome name="Sara" />
+        <Welcome name="Cahal" />
+        <Welcome name="Edite" />
+      </div>
+    );
+  }
+  
+  ReactDOM.render(
+    <App />,
+    document.getElementById('root')
+  );*/
+
+
+
+
+
+
+
+            name ="May Sam"
+           number = " (914)567-9879"/>
+           wnumber = "1-800-234-4567"/>
+           email = "May.Sam@gmail.com"/>
+        </div>
+        <div class = "card2">
+            <Name name ="Juan Perez"/>
+            <PNumber pnumber = " (917)564-9002"/>
+            <WNumber wnumber = "1-800-222-4455"/>
+            <Email email = "Juan.Perez@gmail.com"/>
+         </div>
+         <div class = "card3">
+            <Name name ="Joe Smith"/>
+            <PNumber pnumber = " 1(845)540-0020"/>
+            <WNumber wnumber = "1-800-889-8888"/>
+            <Email email = "Joe.Smith@gmail.com"/>  
